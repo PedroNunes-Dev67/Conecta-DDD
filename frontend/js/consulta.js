@@ -14,7 +14,7 @@ form.addEventListener('submit', async (e) => {
         document.getElementById('load').style='white';
         document.getElementById('load').innerText = "Carregando...";
         
-        let response = await axios.get(`http://localhost:8080/ddd/${ddd}`);
+        let response = await axios.get(`https://conectaddd-backend-production.up.railway.app/ddd/${ddd}`);
         document.getElementById('load').innerText = "";
 
         let {cities, state} = response.data;

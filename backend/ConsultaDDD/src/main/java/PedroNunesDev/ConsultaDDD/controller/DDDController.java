@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import PedroNunesDev.ConsultaDDD.service.DDDService;
 
-@CrossOrigin(origins= "https://conectaddd.netlify.app")
+@CrossOrigin(origins= "http://localhost:5500")
 @RestController
 @RequestMapping("/ddd")
 public class DDDController {
