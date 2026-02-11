@@ -4,7 +4,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
 #div_navbar{
@@ -64,6 +64,7 @@ li a{
     cursor: pointer;
     transition: all 0.3s ease;
     color: white;
+    font-weight: bold;
 }
 
 .btnStyle:hover{
@@ -95,10 +96,15 @@ li a{
 @media(max-width:760px){
     #conteudo{
         flex-direction: column;
+        height: auto;
+        margin-top: 50px;
     }
     .textos div{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
+    }
+    .textos{
+        width: 100%;
     }
     #conteudo img{
         width: 350px;
@@ -110,5 +116,8 @@ li a{
     }
     #footer{
         padding: 10px;
+    }
+    #img_logo{
+        display: none;
     }
 }
