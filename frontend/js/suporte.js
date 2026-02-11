@@ -18,7 +18,7 @@ form.addEventListener('submit', async (e) => {
 
     try{
         RespSuporte.innerText = "Carregando..."
-        let response = await axios.post("https://conectaddd-backend-production.up.railway.app/ddd/request", Request);
+        let response = await axios.post("https://conectaddd-backend-java-1.onrender.com/ddd/request", Request);
 
         RespSuporte.innerText = "Mensagem enviada com sucesso!";
         RespSuporte.style.color = "green";
